@@ -1,4 +1,33 @@
 header
-    padding: 0 5%
+    padding: 0.5% 5%
     width: 100%
     position: fixed
+
+header button
+    font-size: 16pt
+    font-weight: 500
+    border-radius: 6px
+    border: none
+    width: 120px
+    height: 40px
+    transition: all 0.3s
+
+header button svg
+    animation: showArrow
+    animation-duration: 0.5s
+    animation-iteration-count: 1
+    display: none
+
+header button:hover
+    opacity: 80%
+
+header button:hover svg
+    display: initial
+
+.solidHeader
+    transition: all 0.3s
+    background-color: #000000af
+
+@keyframes showArrow
+    0%
+        transform: translateX(-100%)

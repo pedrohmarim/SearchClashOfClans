@@ -24,9 +24,58 @@
 }
 
 header {
-  padding: 0 5%;
+  padding: 0.5% 5%;
   width: 100%;
   position: fixed;
+}
+
+header button {
+  font-size: 16pt;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  width: 120px;
+  height: 40px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header button svg {
+  -webkit-animation: showArrow;
+          animation: showArrow;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  display: none;
+}
+
+header button:hover {
+  opacity: 80%;
+}
+
+header button:hover svg {
+  display: initial;
+}
+
+.solidHeader {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #000000af;
+}
+
+@-webkit-keyframes showArrow {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes showArrow {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 
 #backgroundForm {
@@ -95,12 +144,18 @@ header {
 .containerUser {
   padding: 1%;
   border-radius: 8px;
-  background-color: #00000059;
+  background-color: #cacaca;
 }
 
-.containerUser h1 {
-  width: 80%;
+.containerUser section {
+  padding: 0 3%;
+  font-weight: 500;
+  width: 95%;
   margin: auto;
+}
+
+.containerUser section h1 {
+  margin: 0;
 }
 
 #userDataContainer small {
@@ -111,6 +166,29 @@ header {
 #expLvl {
   font-size: 15pt;
   margin-bottom: 0 !important;
+}
+
+#trophiesContainer {
+  padding: 2%;
+}
+
+#trophiesContainer strong {
+  font-size: 18pt;
+}
+
+.item--user {
+  padding: 2%;
+  margin: 0 10px 20px 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.item--user span {
+  font-size: 16pt;
+  margin-right: 10px;
 }
 
 @-webkit-keyframes showUserDataContainer {
