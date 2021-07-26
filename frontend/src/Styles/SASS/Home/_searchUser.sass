@@ -1,0 +1,72 @@
+#backgroundForm
+    width: 100%
+    height: 100vh
+    position: fixed
+    z-index: -1
+
+#searchUserForm
+    background-color: #000000bb
+    border: solid 1px black
+    width: 60%
+    padding: 2% 3% 3% 3%
+    border-radius: 5px
+
+#searchUserForm h1,#searchUserForm span
+    color: $white
+
+#searchUserForm span
+    margin: 0 0 15px 0
+
+#searchUserForm img
+    width: 400px
+    height: auto
+
+#searchUserForm button
+    color: $white
+    font-size: 15pt
+    font-weight: 500
+    background-color: $red
+    border-radius: 5px
+    outline: none
+    border: none
+    width: 100%
+    height: 50px
+    transition: all 0.3s
+
+#searchUserForm button:hover
+    opacity: 75%
+
+#userDataContainer
+    margin-bottom: 20px
+    padding: 1%
+    animation: showUserDataContainer
+    animation-duration: 1s
+    animation-iteration-count: 1
+    margin-top: -130px
+    margin-right: auto
+    margin-left: auto
+    width: 95%
+    background-color: $white
+    border-radius: 8px
+
+.containerUser
+    padding: 1%
+    border-radius: 8px
+    background-color: #00000059
+
+.containerUser h1
+    width: 80%
+    margin: auto
+
+#userDataContainer small
+    font-size: 16pt
+    margin-left: 3px
+
+#expLvl
+    font-size: 15pt
+    margin-bottom: 0 !important
+
+@keyframes showUserDataContainer
+    0%
+        opacity: 0%
+        transform: translateY(-100%)

@@ -1,0 +1,131 @@
+.centered {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.MuiInputBase-input, .MuiInputLabel-root {
+  color: #FFF !important;
+}
+
+.MuiInput-underline {
+  border-bottom: solid 1px #fff;
+}
+
+header {
+  padding: 0 5%;
+  width: 100%;
+  position: fixed;
+}
+
+#backgroundForm {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+#searchUserForm {
+  background-color: #000000bb;
+  border: solid 1px black;
+  width: 60%;
+  padding: 2% 3% 3% 3%;
+  border-radius: 5px;
+}
+
+#searchUserForm h1, #searchUserForm span {
+  color: #FFF;
+}
+
+#searchUserForm span {
+  margin: 0 0 15px 0;
+}
+
+#searchUserForm img {
+  width: 400px;
+  height: auto;
+}
+
+#searchUserForm button {
+  color: #FFF;
+  font-size: 15pt;
+  font-weight: 500;
+  background-color: #e50501;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#searchUserForm button:hover {
+  opacity: 75%;
+}
+
+#userDataContainer {
+  margin-bottom: 20px;
+  padding: 1%;
+  -webkit-animation: showUserDataContainer;
+          animation: showUserDataContainer;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  margin-top: -130px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 95%;
+  background-color: #FFF;
+  border-radius: 8px;
+}
+
+.containerUser {
+  padding: 1%;
+  border-radius: 8px;
+  background-color: #00000059;
+}
+
+.containerUser h1 {
+  width: 80%;
+  margin: auto;
+}
+
+#userDataContainer small {
+  font-size: 16pt;
+  margin-left: 3px;
+}
+
+#expLvl {
+  font-size: 15pt;
+  margin-bottom: 0 !important;
+}
+
+@-webkit-keyframes showUserDataContainer {
+  0% {
+    opacity: 0%;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes showUserDataContainer {
+  0% {
+    opacity: 0%;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+/*# sourceMappingURL=index.css.map */
